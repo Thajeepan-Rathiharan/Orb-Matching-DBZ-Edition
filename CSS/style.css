@@ -81,8 +81,6 @@ body {
   width: 100%;
 }  
 
-.hp{
-
 .char-wrapper {
   position: relative;
   width: 10vw;
@@ -90,6 +88,8 @@ body {
   height: auto;
   margin: 10px auto;
 }
+
+.hp{
 
 .char-image {
   position: absolute;
