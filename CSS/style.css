@@ -1,23 +1,47 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
   background: #111;
   color: white;
   font-family: sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 95vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.orb-section {
+  flex: 1;
+}
+
+.character-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 60px);
-  grid-template-rows: repeat(5, 60px);
+  grid-template-columns: repeat(6, 1fr);
   gap: 5px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .orb {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -39,6 +63,7 @@ body {
   background: #222;
   border-radius: 8px;
   text-align: center;
+  width: 100%;
 }
 
 .health-bar {
@@ -58,16 +83,17 @@ body {
 
 .char-wrapper {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 25vw;
+  max-width: 120px;
+  height: auto;
   margin: 10px auto;
 }
 
 .char-image {
   position: absolute;
-  top: -20px;
-  left: -10px;
-  width: 120px;
+  top: -10%;
+  left: -10%;
+  width: 120%;
   height: auto;
   z-index: 2;
   object-fit: cover;
