@@ -79,7 +79,9 @@ body {
   height: 100%;
   background: limegreen;
   width: 100%;
-}
+}  
+
+.hp{
 
 .char-wrapper {
   position: relative;
