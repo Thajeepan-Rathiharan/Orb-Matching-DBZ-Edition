@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: white;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 5px;
+}
+
+.orb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.orb:hover {
+  transform: scale(1.1);
+}
+
+.battle {
+  margin-top: 20px;
+  padding: 10px;
+  background: #222;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.health-bar {
+  width: 200px;
+  height: 20px;
+  background: #444;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.health-fill {
+  height: 100%;
+  background: limegreen;
+  width: 100%;
+}
+
+.char-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.char-image {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  width: 120px;
+  height: auto;
+  z-index: 2;
+  object-fit: cover;
+}

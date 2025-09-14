@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orb Matching - DBZ Edition</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div>
+    <h2>Orb Matching + Combat Demo</h2>
+    <p>Click orbs of the same color in a row to power up your attack!</p>
+    <div class="grid" id="grid"></div>
+    <p id="score">Energy: 0</p>
+
+    <div class="battle">
+      <h3>Your Character</h3>
+      <div class="char-wrapper">
+        <img src="IMG/goku.png" class="char-image" alt="Player Icon">
+      </div>
+      <div class="health-bar"><div class="health-fill" id="player-health"></div></div>
+      <p id="player-hp">HP: 100</p>
+    </div>
+
+    <div class="battle">
+      <h3>Enemy</h3>
+      <div class="char-wrapper">
+        <img src="IMG/vegeta.png" class="char-image" alt="Enemy Icon">
+      </div>
+      <div class="health-bar"><div class="health-fill" id="enemy-health"></div></div>
+      <p id="enemy-hp">HP: 100</p>
+      <button id="attackBtn">Attack!</button>
+    </div>
+  </div>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
